@@ -21,7 +21,7 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 const HomePage = () => {
   const paragraphFontSize = { base: "1rem", md: "1.25rem" };
   return (
-    <Container maxW={"Container.x1"} py={5} mt={0}>
+    <Container maxW={"Container.x1"} py={0} mt={0}>
       <VStack spacing={3}>
         <Box
           bgSize="cover"
@@ -151,7 +151,7 @@ const HomePage = () => {
 
           <Center my={4}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.955382095965!2d106.58651495!3d-6.2322125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fc2c3645d9db%3A0x495eacf86ed2795!2sBinong%2C%20Curug%2C%20Tangerang%20Regency%2C%20Banten!5e0!3m2!1sen!2sid!4v1732950418168!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3966.2349181979266!2d106.579673!3d-6.2327319999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTMnNTcuOCJTIDEwNsKwMzQnNDYuOCJF!5e0!3m2!1sen!2sid!4v1732952787226!5m2!1sen!2sid"
               width="400"
               height="250"
               loading="lazy"

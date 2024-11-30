@@ -13,8 +13,8 @@ import MobileDrawer from "./MobileDrawer";
 
 export default function Header() {
   return (
-    <chakra.header id="header" mb={0} h={"60px"}>
-      <Flex w="100%" px="6" py="5" alignItems="center" justify="space-between">
+    <chakra.header id="header" mb={0} h={"70px"} bg={"gray.100"}>
+      <Flex w="100%" px="6" py="4" alignItems="center" justify="space-between">
         <HStack spacing="2">
           <Box
             width={"40px"}
