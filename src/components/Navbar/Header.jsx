@@ -10,21 +10,14 @@ import {
 import { Link } from "react-router-dom";
 import React from "react";
 import MobileDrawer from "./MobileDrawer";
+import logo from "/david_teknik_logo.png";
 
 export default function Header() {
   return (
     <chakra.header id="header" mb={0} h={"70px"} bg={"gray.100"}>
       <Flex w="100%" px="6" py="4" alignItems="center" justify="space-between">
         <HStack spacing="2">
-          <Box
-            width={"40px"}
-            height={"40px"}
-            border={"1px"}
-            textAlign={"center"}
-            py={"6px"}
-          >
-            Logo
-          </Box>
+          <Image width={"40px"} height={"40px"} objectFit="cover" src={logo} />
           <Text
             fontSize={{ base: "10", sm: "15", md: "17", lg: "21" }}
             fontWeight={"bold"}

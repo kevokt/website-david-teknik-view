@@ -17,6 +17,7 @@ import ProductCard from "../components/ProductCard";
 import { GiComputerFan } from "react-icons/gi";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import logo from "/david_teknik_logo.png"
 
 const HomePage = () => {
   const paragraphFontSize = { base: "1rem", md: "1.25rem" };
