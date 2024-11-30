@@ -11,7 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-export default function Drawer({
+export default function DrawerExample({
   p = 15,
   placement = "top",
   width,
