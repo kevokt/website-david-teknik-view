@@ -18,7 +18,7 @@ const CentrifugalFanModal = () => {
 
   return (
     <Box>
-      <Button onClick={onOpen}>Lihat Gambar Centrifugal Fan</Button>
+      <Button onClick={onOpen}>Gambar Centrifugal Fan</Button>
       <Modal isOpen={isOpen} onClose={onClose} scrollBehavior={"inside"}>
         <ModalOverlay />
         <ModalContent>

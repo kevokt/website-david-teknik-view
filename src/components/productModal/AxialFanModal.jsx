@@ -17,7 +17,7 @@ const AxialFanModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box>
-      <Button onClick={onOpen}>Lihat Gambar Axial Fan</Button>
+      <Button onClick={onOpen}>Gambar Axial Fan</Button>
       <Modal isOpen={isOpen} onClose={onClose} scrollBehavior={"inside"}>
         <ModalOverlay />
         <ModalContent>

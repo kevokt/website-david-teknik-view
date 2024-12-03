@@ -17,7 +17,7 @@ const BlowerCustomModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box>
-      <Button onClick={onOpen}>Lihat Gambar Blower Custom</Button>
+      <Button onClick={onOpen}>Gambar Blower Custom</Button>
       <Modal isOpen={isOpen} onClose={onClose} scrollBehavior={"inside"}>
         <ModalOverlay />
         <ModalContent>
