@@ -1,19 +1,27 @@
 import React from "react";
-import { Flex, Box, Image } from "@chakra-ui/react";
+import { Flex, Box, Image, HStack, Stack } from "@chakra-ui/react";
 
-function ProductCard({ title, imgSrc, description }) {
+const ProductArticle = ({ title, description, imgSrc }) => {
   return (
-    <Box
+    <Stack
       bg={"white"}
-      maxW="sm"
-      w={{ base: "280px", md: "350px" }}
-      minH={"450px"}
+      direction={{ base: "column", md: "row" }}
+      minW={{ base: "280px", md: "2xl" }}
+      maxW={{ base: "md", md: "7xl" }}
+      w={"80%"}
+      h={{ base: "500px", md: "200px" }}
       borderWidth="1px"
       rounded="lg"
       shadow="lg"
       position="relative"
+      p={0}
     >
-      <Image src={imgSrc} roundedTop="lg" />
+      <Image
+        src={imgSrc}
+        roundedStart="lg"
+        objectFit={"cover"}
+        maxH={{ base: "200px", md: "100%" }}
+      />
 
       <Box p="6">
         <Flex mt="1" justifyContent="space-between" alignContent="center">
@@ -35,8 +43,8 @@ function ProductCard({ title, imgSrc, description }) {
           </Box>
         </Flex>
       </Box>
-    </Box>
+    </Stack>
   );
-}
+};
 
-export default ProductCard;
+export default ProductArticle;

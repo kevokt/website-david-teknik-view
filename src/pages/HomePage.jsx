@@ -15,9 +15,8 @@ import { Link } from "react-router-dom";
 import ScrollAnimation from "react-animate-on-scroll";
 import ProductCard from "../components/ProductCard";
 import { GiComputerFan } from "react-icons/gi";
-import { FaWhatsapp } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import logo from "/david_teknik_logo.png"
+import { IoMdContacts } from "react-icons/io";
 
 const HomePage = () => {
   const paragraphFontSize = { base: "1rem", md: "1.25rem" };
@@ -39,7 +38,7 @@ const HomePage = () => {
             padding={"80px"}
           >
             <Text
-              fontSize={"2.25rem"}
+              fontSize={{ base: "1.5rem", md: "2.25rem" }}
               fontWeight={"650"}
               color={"white"}
               textAlign={"center"}
@@ -50,7 +49,11 @@ const HomePage = () => {
 
             <Flex flexDirection={"column"} spacing="2">
               <a href="#about-us">
-                <Button rightIcon={<FaMagnifyingGlass />} width="300px" mb={5}>
+                <Button
+                  rightIcon={<FaMagnifyingGlass />}
+                  width={"200px"}
+                  mb={10}
+                >
                   Pelajari Lebih Lanjut
                 </Button>
               </a>
@@ -67,10 +70,10 @@ const HomePage = () => {
             mb={3}
             id="about-us"
           >
-            About Us
+            Tentang kami
           </Text>
 
-          <Text fontSize={paragraphFontSize}>
+          <Text fontSize={paragraphFontSize} fontWeight={"375"}>
             CV. David Teknik Blower merupakan salah satu usaha yang bergerak
             dalam bidang produksi dan distribusi kipas industri. Dengan
             pengalaman bertahun-tahun dalam desain, fabrikasi, dan instalasi
@@ -78,7 +81,7 @@ const HomePage = () => {
             berbagai sektor industri.
           </Text>
 
-          <Text fontSize={paragraphFontSize} mt={"30px"}>
+          <Text fontSize={paragraphFontSize} fontWeight={"375"} mt={"30px"}>
             Kami berkomitmen untuk memberikan solusi terbaik dalam pengendalian
             polusi udara dan sistem ventilasi industri. Dengan tim ahli yang
             berdedikasi dan teknologi terkini, kami memastikan setiap proyek
@@ -96,7 +99,7 @@ const HomePage = () => {
             fontSize={"1.75rem"}
             fontWeight={"600"}
           >
-            Our Products
+            Produk Kami
           </Text>
 
           <Flex
@@ -128,13 +131,15 @@ const HomePage = () => {
             />
           </Flex>
           <Flex justifyContent="center">
-            <Button
-              rightIcon={<GiComputerFan />}
-              colorScheme="blue"
-              variant="outline"
-            >
-              Lihat Produk Kami Lebih Lanjut
-            </Button>
+            <Link to={"/product"}>
+              <Button
+                rightIcon={<GiComputerFan />}
+                colorScheme="blue"
+                variant="outline"
+              >
+                Lihat Produk Kami Lebih Lanjut
+              </Button>
+            </Link>
           </Flex>
         </Box>
 
@@ -146,27 +151,30 @@ const HomePage = () => {
               fontWeight={"600"}
               align={"center"}
             >
-              Our Contacts and Location
+              Temukan Kami
             </Text>
           </Center>
 
           <Center my={4}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3966.2349181979266!2d106.579673!3d-6.2327319999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTMnNTcuOCJTIDEwNsKwMzQnNDYuOCJF!5e0!3m2!1sen!2sid!4v1732952787226!5m2!1sen!2sid"
-              width="400"
-              height="250"
+              width="550"
+              height="350"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              className="gmaps"
             ></iframe>
           </Center>
           <Center>
-            <Button
-              rightIcon={<FaWhatsapp />}
-              colorScheme="green"
-              variant="outline"
-            >
-              Kontak Kami Melalui WhatsApp
-            </Button>
+            <Link to={"/contact"}>
+              <Button
+                rightIcon={<IoMdContacts />}
+                colorScheme="green"
+                variant="outline"
+              >
+                Kontak Kami
+              </Button>
+            </Link>
           </Center>
         </Box>
       </VStack>

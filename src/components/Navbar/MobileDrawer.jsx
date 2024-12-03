@@ -17,7 +17,11 @@ export default function MobileDrawer() {
   const btnRef = React.useRef();
 
   return (
-    <Flex display={{ base: "flex", md: "none" }}>
+    <Flex
+      display={{ base: "flex", md: "none" }}
+      border={"1px solid black"}
+      borderRadius={"6px"}
+    >
       <Button ref={btnRef} onClick={onOpen}>
         <IoMdMenu size="26px" />
       </Button>
