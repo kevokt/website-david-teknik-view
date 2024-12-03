@@ -26,7 +26,7 @@ export default function MobileDrawer() {
         <IoMdMenu size="26px" />
       </Button>
       <Drawer isOpen={isOpen} onClose={onClose} finalFocusRef={btnRef}>
-        <VStack alignItems="center" spacing="5">
+        <VStack alignItems="center" spacing="1">
           <Link to={"/"} onClick={onClose}>
             <Button variant="ghost">Home</Button>
           </Link>

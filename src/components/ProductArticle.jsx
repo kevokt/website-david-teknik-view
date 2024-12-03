@@ -1,15 +1,18 @@
 import React from "react";
-import { Flex, Box, Image, HStack, Stack } from "@chakra-ui/react";
+import { Flex, Box, Image, Stack } from "@chakra-ui/react";
+import AxialFanModal from "./productModal/AxialFanModal";
+import CentrifugalFanModal from "./productModal/CentrifugalFanModal";
+import BlowerCustomModal from "./productModal/BlowerCustomModal";
 
-const ProductArticle = ({ title, description, imgSrc }) => {
+const ProductArticle = ({ title, description, imgSrc, modalType }) => {
   return (
     <Stack
       bg={"white"}
-      direction={{ base: "column", md: "row" }}
-      minW={{ base: "280px", md: "2xl" }}
-      maxW={{ base: "md", md: "7xl" }}
+      direction={{ base: "column", lg: "row" }}
+      minW={{ base: "280px", lg: "2xl" }}
+      maxW={{ base: "md", lg: "7xl" }}
       w={"80%"}
-      h={{ base: "500px", md: "200px" }}
+      h={{ base: "500px", lg: "200px" }}
       borderWidth="1px"
       rounded="lg"
       shadow="lg"
@@ -20,27 +23,37 @@ const ProductArticle = ({ title, description, imgSrc }) => {
         src={imgSrc}
         roundedStart="lg"
         objectFit={"cover"}
-        maxH={{ base: "200px", md: "100%" }}
+        maxH={{ base: "200px", lg: "100%" }}
       />
-
       <Box p="6">
-        <Flex mt="1" justifyContent="space-between" alignContent="center">
-          <Box
-            fontSize="2xl"
-            fontWeight="semibold"
-            as="h4"
-            lineHeight="tight"
-            isTruncated
-            alignItems={"center"}
+        <Flex
+          flexDirection={"column"}
+          justifyContent={"space-between"}
+          minH={{ base: "115%", sm: "130%", md: "140%", lg: "100%" }}
+        >
+          <Flex
+            mt="1"
+            justifyContent="space-between"
+            alignContent="center"
+            flexDirection={"column"}
           >
-            {title}
-          </Box>
-        </Flex>
-
-        <Flex justifyContent="space-between" alignContent="center">
-          <Box color={"gray.600"} fontSize="sm">
-            {description}
-          </Box>
+            <Box
+              fontSize="2xl"
+              fontWeight="semibold"
+              as="h4"
+              lineHeight="tight"
+              isTruncated
+              alignItems={"center"}
+            >
+              {title}
+            </Box>
+            <Box color={"gray.600"} fontSize="sm">
+              {description}
+            </Box>
+          </Flex>
+          {modalType === 1 && <AxialFanModal />}
+          {modalType === 2 && <CentrifugalFanModal />}
+          {modalType === 3 && <BlowerCustomModal />}
         </Flex>
       </Box>
     </Stack>

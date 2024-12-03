@@ -15,7 +15,13 @@ import { GiComputerFan } from "react-icons/gi";
 
 export default function Header() {
   return (
-    <chakra.header id="header" mb={0} h={"70px"} bg={"gray.100"}>
+    <chakra.header
+      id="header"
+      mb={0}
+      h={"75px"}
+      bg={"gray.100"}
+      boxShadow={"lg"}
+    >
       <Flex w="100%" px="6" py="4" alignItems="center" justify="space-between">
         <HStack spacing="2">
           <GiComputerFan size={30} />
