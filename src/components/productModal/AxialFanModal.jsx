@@ -16,14 +16,14 @@ import {
 import data from "./product_data";
 
 const displayImages = () => {
-  const axialFanData = data[0]?.axial_fan;
+  const fans = data[0]?.axial_fan;
 
-  if (!axialFanData) {
+  if (!fans) {
     return <p>Data not found</p>;
   }
 
-  return Object.keys(axialFanData).map((key) => {
-    const fan = axialFanData[key];
+  return Object.keys(fans).map((key) => {
+    const fan = fans[key];
     return (
       <Box key={key} mb={4}>
         <Text align={"center"}>{fan.name}</Text>

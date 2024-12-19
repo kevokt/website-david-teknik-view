@@ -13,7 +13,13 @@ function ProductCard({ title, imgSrc, description }) {
       shadow="lg"
       position="relative"
     >
-      <Image src={imgSrc} roundedTop="lg" />
+      <Image
+        src={imgSrc}
+        roundedTop="lg"
+        maxH={"200px"}
+        objectFit={"cover"}
+        w={"100%"}
+      />
 
       <Box p="6">
         <Flex mt="1" justifyContent="space-between" alignContent="center">

@@ -29,16 +29,22 @@ const ProductPage = () => {
           modalType={1}
         />
         <ProductArticle
-          title="Centrifugal Fan"
-          description="Centrifugal fan adalah mesin yang memanfaatkan gaya sentrifugal untuk mengalirkan udara yang dihisap melalui inlet blower, kemudian diputar ke arah sumbu berlawanan dan dikeluarkan melalui outlet blower bertekanan tinggi."
-          imgSrc="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          title="Blower Custom"
+          description="Blower custom adalah blower yang dirancang khusus sesuai permintaan. Kami menawarkan layanan kustomisasi untuk memenuhi kebutuhan khusus pelanggan. "
+          imgSrc="/foto_produk_david_teknik/Blower_dustcollector_portable/BC2_cropped.jpg"
           modalType={2}
         />
         <ProductArticle
-          title="Blower Custom"
-          description="Blower custom adalah blower yang dirancang khusus sesuai permintaan. Kami menawarkan layanan kustomisasi untuk memenuhi kebutuhan khusus pelanggan. "
-          imgSrc="https://plus.unsplash.com/premium_photo-1677172408819-a493426f6e10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          title="Centrifugal High & Low Pressure"
+          description="Kipas sentrifugal yang menghasilkan aliran udara dengan tekanan tinggi atau rendah, digunakan untuk aplikasi ventilasi, pendinginan, dan pengeringan di berbagai industri."
+          imgSrc="/foto_produk_david_teknik/centrifugal_high_low_pressure/C8.jpg"
           modalType={3}
+        />
+        <ProductArticle
+          title="Impeler Centrifugal"
+          description="Komponen utama kipas sentrifugal yang mengalirkan udara dengan efisiensi tinggi menggunakan gaya sentrifugal, ideal untuk aplikasi tekanan tinggi dan rendah."
+          imgSrc="/foto_produk_david_teknik/impeler_centrifugal/IC11.jpg"
+          modalType={4}
         />
       </VStack>
     </Container>

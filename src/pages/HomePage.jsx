@@ -115,18 +115,18 @@ const HomePage = () => {
             <ProductCard
               title="Axial Fan"
               description="Dirancang untuk memaksimalkan aliran udara dalam berbagai aplikasi, seperti sistem ventilasi gedung, pabrik, dan fasilitas industri."
-              imgSrc="https://plus.unsplash.com/premium_photo-1677172408819-a493426f6e10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              imgSrc="/foto_produk_david_teknik/axial_fan/A1.jpg"
             />
 
             <ProductCard
               title="Centrifugal Fan"
-              imgSrc="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              imgSrc="/foto_produk_david_teknik/centrifugal_high_low_pressure/C5.jpg"
               description="Solusi ideal untuk sistem yang memerlukan tekanan tinggi dan aliran udara besar. Cocok untuk digunakan dalam sistem HVAC, pabrik kimia, dan proses industri lainnya."
             />
 
             <ProductCard
               title="Blower Custom"
-              imgSrc="https://images.unsplash.com/photo-1464490997959-0c65eee1cc26?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              imgSrc="/foto_produk_david_teknik/Blower_dustcollector_portable/BC2_cropped.jpg"
               description="Kami juga menyediakan layanan kustomisasi untuk memenuhi kebutuhan spesifik pelanggan. Dengan tim ahli yang berpengalaman, kami siap merancang dan memproduksi blower sesuai permintaan"
             />
           </Flex>

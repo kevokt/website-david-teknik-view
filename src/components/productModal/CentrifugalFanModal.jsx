@@ -11,7 +11,34 @@ import {
   Button,
   Box,
   Image,
+  Text,
 } from "@chakra-ui/react";
+import data from "./product_data";
+
+const displayImages = () => {
+  const fans = data[0]?.centrifugal_high_low_pressure;
+
+  if (!fans) {
+    return <p>Data not found</p>;
+  }
+
+  return Object.keys(fans).map((key) => {
+    const fan = fans[key];
+    return (
+      <Box key={key} mb={4}>
+        <Text align={"center"}>{fan.name}</Text>
+        <Image
+          src={fan.img}
+          alt={`Blower Custom ${fan.img}`}
+          loading="lazy"
+          className="product-image"
+          mt={2}
+        />
+        <Box borderBottom={"1px solid lightgray"} mt={8}></Box>
+      </Box>
+    );
+  });
+};
 
 const CentrifugalFanModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -24,28 +51,7 @@ const CentrifugalFanModal = () => {
         <ModalContent>
           <ModalHeader>Berikut gambar Centrifugal Fan kami:</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
-            <img
-              src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              loading="lazy"
-              className="product-image"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              loading="lazy"
-              className="product-image"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              loading="lazy"
-              className="product-image"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              loading="lazy"
-              className="product-image"
-            />
-          </ModalBody>
+          <ModalBody>{displayImages()}</ModalBody>
           <ModalFooter></ModalFooter>
         </ModalContent>
       </Modal>

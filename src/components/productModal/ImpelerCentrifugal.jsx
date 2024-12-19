@@ -16,7 +16,7 @@ import {
 import data from "./product_data";
 
 const displayImages = () => {
-  const fans = data[0]?.blower_custom;
+  const fans = data[0]?.impeler_centrifugal;
 
   if (!fans) {
     return <p>Data not found</p>;
@@ -40,15 +40,16 @@ const displayImages = () => {
   });
 };
 
-const BlowerCustomModal = () => {
+const ImpelerCentrifugalModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Box>
-      <Button onClick={onOpen}>Gambar Blower Custom</Button>
+      <Button onClick={onOpen}>Gambar Centrifugal Fan</Button>
       <Modal isOpen={isOpen} onClose={onClose} scrollBehavior={"inside"}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Berikut gambar Blower Custom kami:</ModalHeader>
+          <ModalHeader>Berikut gambar Centrifugal Fan kami:</ModalHeader>
           <ModalCloseButton />
           <ModalBody>{displayImages()}</ModalBody>
           <ModalFooter></ModalFooter>
@@ -58,4 +59,4 @@ const BlowerCustomModal = () => {
   );
 };
 
-export default BlowerCustomModal;
+export default ImpelerCentrifugalModal;

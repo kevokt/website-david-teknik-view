@@ -3,6 +3,7 @@ import { Flex, Box, Image, Stack } from "@chakra-ui/react";
 import AxialFanModal from "./productModal/AxialFanModal";
 import CentrifugalFanModal from "./productModal/CentrifugalFanModal";
 import BlowerCustomModal from "./productModal/BlowerCustomModal";
+import ImpelerCentrifugalModal from "./productModal/ImpelerCentrifugal";
 
 const ProductArticle = ({ title, description, imgSrc, modalType }) => {
   return (
@@ -10,7 +11,7 @@ const ProductArticle = ({ title, description, imgSrc, modalType }) => {
       bg={"white"}
       direction={{ base: "column", lg: "row" }}
       minW={{ base: "280px", lg: "2xl" }}
-      maxW={{ base: "md", lg: "7xl" }}
+      maxW={{ base: "md", lg: "5xl" }}
       w={"80%"}
       h={{ base: "500px", lg: "200px" }}
       borderWidth="1px"
@@ -52,8 +53,9 @@ const ProductArticle = ({ title, description, imgSrc, modalType }) => {
             </Box>
           </Flex>
           {modalType === 1 && <AxialFanModal />}
-          {modalType === 2 && <CentrifugalFanModal />}
-          {modalType === 3 && <BlowerCustomModal />}
+          {modalType === 2 && <BlowerCustomModal />}
+          {modalType === 3 && <CentrifugalFanModal />}
+          {modalType === 4 && <ImpelerCentrifugalModal />}
         </Flex>
       </Box>
     </Stack>
