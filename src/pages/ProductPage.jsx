@@ -25,7 +25,7 @@ const ProductPage = () => {
         <ProductArticle
           title="Axial Fan"
           description="Axial fan adalah perangkat mekanis yang berfungsi menggerakkan udara atau gas sejajar dengan porosnya. Kipas ini juga dikenal sebagai kipas baling-baling, kipas tabung aksial, atau kipas baling-baling aksial."
-          imgSrc="https://images.unsplash.com/photo-1464490997959-0c65eee1cc26?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          imgSrc="/foto_produk_david_teknik/axial_fan/A1.jpg"
           modalType={1}
         />
         <ProductArticle
