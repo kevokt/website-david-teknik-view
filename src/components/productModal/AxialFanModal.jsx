@@ -15,43 +15,7 @@ import {
 } from "@chakra-ui/react";
 import data from "./product_data";
 
-// const data = {
-//   A1: {
-//     name: "A1",
-//     img: "/foto_produk_david_teknik/axial_fan/A1.jpg",
-//   },
-//   A2: {
-//     name: "A2",
-//     img: "/foto_produk_david_teknik/axial_fan/A2.jpg",
-//   },
-//   A3: {
-//     name: "A3",
-//     img: "/foto_produk_david_teknik/axial_fan/A3.jpg",
-//   },
-//   A4: {
-//     name: "A4",
-//     img: "/foto_produk_david_teknik/axial_fan/A4.jpg",
-//   },
-//   A5: {
-//     name: "A5",
-//     img: "/foto_produk_david_teknik/axial_fan/A5.jpg",
-//   },
-//   A6: {
-//     name: "A6",
-//     img: "/foto_produk_david_teknik/axial_fan/A6.jpg",
-//   },
-//   A7: {
-//     name: "A7",
-//     img: "/foto_produk_david_teknik/axial_fan/A7.jpg",
-//   },
-//   A8: {
-//     name: "A8",
-//     img: "/foto_produk_david_teknik/axial_fan/A8.jpg",
-//   },
-// };
-
 const displayImages = () => {
-  // Access the first element in the array and then the "axial_fan" object
   const axialFanData = data[0]?.axial_fan;
 
   if (!axialFanData) {
@@ -62,13 +26,15 @@ const displayImages = () => {
     const fan = axialFanData[key];
     return (
       <Box key={key} mb={4}>
-        <h8>{fan.name}</h8>
+        <Text align={"center"}>{fan.name}</Text>
         <Image
           src={fan.img}
           alt={`Axial Fan ${fan.name}`}
           loading="lazy"
           className="product-image"
+          mt={2}
         />
+        <Box borderBottom={"1px solid lightgray"} mt={8}></Box>
       </Box>
     );
   });

@@ -33,6 +33,20 @@ export default [
         "name": "A8",
         "img": "/foto_produk_david_teknik/axial_fan/A8.jpg"
       }
+    },
+    "blower_custom": {
+      "BC1": {
+        "name": "BC1",
+        "img": "/foto_produk_david_teknik/Blower_dustcollector_portable/BC1.jpg"
+      },
+      "BC2": {
+        "name": "BC2",
+        "img": "/foto_produk_david_teknik/Blower_dustcollector_portable/BC2.jpg"
+      },
+      "BC3": {
+        "name": "BC3",
+        "img": "/foto_produk_david_teknik/Blower_dustcollector_portable/BC3.jpg"
+      },
     }
   }
 ]
