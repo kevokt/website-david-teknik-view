@@ -18,7 +18,13 @@ const ProductPage = () => {
   return (
     <Container maxW={"Container.x1"} py={12}>
       <VStack spacing={6}>
-        <Text fontSize={"30"} fontWeight={"bold"} textAlign={"center"} mb={4}>
+        <Text
+          fontSize={"3xl"}
+          fontWeight={"bold"}
+          textAlign={"center"}
+          mb={4}
+          mt={5}
+        >
           Produk Kami
         </Text>
 

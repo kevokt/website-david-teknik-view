@@ -108,7 +108,7 @@ const HomePage = () => {
             alignItems="center"
             justifyContent="center"
             gap={4}
-            flexDirection={{ base: "column", md: "row" }}
+            flexDirection={{ base: "column", lg: "row" }}
             mt={0}
             py={4}
           >

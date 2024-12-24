@@ -5,9 +5,8 @@ function ProductCard({ title, imgSrc, description }) {
   return (
     <Box
       bg={"white"}
-      maxW="sm"
-      w={{ base: "280px", md: "350px" }}
-      minH={"450px"}
+      w={"350px"}
+      h={"500px"}
       borderWidth="1px"
       rounded="lg"
       shadow="lg"
@@ -16,7 +15,7 @@ function ProductCard({ title, imgSrc, description }) {
       <Image
         src={imgSrc}
         roundedTop="lg"
-        maxH={"200px"}
+        h={"200px"}
         objectFit={"cover"}
         w={"100%"}
       />
