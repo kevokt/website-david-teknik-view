@@ -22,7 +22,7 @@ export default function Header() {
       bg={"gray.100"}
       boxShadow={"lg"}
     >
-      <Flex w="100%" px="6" py="4" alignItems="center" justify="space-between">
+      <Flex w="100%" px="10" py="4" alignItems="center" justify="space-between">
         <HStack spacing="2">
           <GiComputerFan size={30} />
           <Text

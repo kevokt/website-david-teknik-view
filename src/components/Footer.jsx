@@ -32,10 +32,10 @@ const Logo = (props) => {
   );
 };
 
-const SocialButton = ({ children, label, href }) => {
+const SocialButton = ({ children, label, href, colorBg, colorHover }) => {
   return (
     <chakra.button
-      bg={"blackAlpha.100"}
+      bg={colorBg}
       rounded={"full"}
       w={10}
       h={10}
@@ -47,7 +47,7 @@ const SocialButton = ({ children, label, href }) => {
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        bg: "blackAlpha.300",
+        bg: colorHover,
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
@@ -105,8 +105,12 @@ export default function SmallCentered() {
               rel="noopener noreferrer"
               aria-label="Send a WhatsApp message"
             >
-              <SocialButton label="Whatsapp">
-                <IoLogoWhatsapp size={"23px"} />
+              <SocialButton
+                label="Whatsapp"
+                colorBg="#dcf8c6"
+                colorHover={"#c6dfb2"}
+              >
+                <IoLogoWhatsapp size={"23px"} color="#25d366" />
               </SocialButton>
             </a>
 
@@ -116,8 +120,12 @@ export default function SmallCentered() {
               rel="noopener noreferrer"
               aria-label="Send a E-Mail message"
             >
-              <SocialButton label={"E-mail"}>
-                <MdEmail size={"23px"} />
+              <SocialButton
+                label={"E-mail"}
+                colorBg="#f9e7e7"
+                colorHover="#eeb9b7"
+              >
+                <MdEmail size={"23px"} color="	#c71610" />
               </SocialButton>
             </a>
           </Stack>
