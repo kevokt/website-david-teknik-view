@@ -36,7 +36,7 @@ function ProductCard({ title, imgSrc, description }) {
         </Flex>
 
         <Flex justifyContent="space-between" alignContent="center">
-          <Box color={"gray.600"} fontSize="sm">
+          <Box color={"gray.600"} fontSize="sm" fontWeight={"400"}>
             {description}
           </Box>
         </Flex>
