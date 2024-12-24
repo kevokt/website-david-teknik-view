@@ -23,8 +23,8 @@ const ProductArticle = ({ title, description, imgSrc, modalType }) => {
       <Image
         src={imgSrc}
         roundedStart={{ base: "none", lg: "lg" }}
-        roundedTop={{ base: "none", sm: "lg", md: "lg" }}
-        roundedTopRight={{ base: "none", lg: "none" }}
+        roundedTop={{ base: "lg", sm: "lg", md: "lg" }}
+        roundedTopRight={{ base: "lg", lg: "none" }}
         objectFit={"cover"}
         maxH={{ base: "200px", lg: "100%" }}
       />
