@@ -57,25 +57,46 @@ const ContactPage = () => {
           </Center>
           <VStack my={"auto"}>
             <Text>Nomor Whatsapp:</Text>
-            <Button
-              leftIcon={<IoMdContacts />}
-              colorScheme="green"
-              rounded={"3xl"}
+            <a
+              href="https://api.whatsapp.com/send?phone=6282114059549"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send a WhatsApp message"
             >
-              0821-1405-9549
-            </Button>
-            <Button
-              leftIcon={<IoMdContacts />}
-              colorScheme="green"
-              rounded={"3xl"}
+              <Button
+                leftIcon={<IoMdContacts />}
+                colorScheme="green"
+                rounded={"3xl"}
+              >
+                0821-1405-9549
+              </Button>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=6285771782036"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send a WhatsApp message"
             >
-              0857-7178-2036
-            </Button>
+              <Button
+                leftIcon={<IoMdContacts />}
+                colorScheme="green"
+                rounded={"3xl"}
+              >
+                0857-7178-2036
+              </Button>
+            </a>
 
             <Text>Alamat Email:</Text>
-            <Button leftIcon={<MdEmail />} colorScheme="red" rounded={"3xl"}>
-              davidteknikblower1@gmail.com
-            </Button>
+            <a
+              href="mailto:davidteknikblower1@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send a E-Mail message"
+            >
+              <Button leftIcon={<MdEmail />} colorScheme="red" rounded={"3xl"}>
+                davidteknikblower1@gmail.com
+              </Button>
+            </a>
           </VStack>
         </Flex>
       </VStack>
