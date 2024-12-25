@@ -34,27 +34,27 @@ export default function Header() {
             <Link to={"/"}>CV. David Teknik Blower</Link>
           </Text>
         </HStack>
-        <HStack as="nav" spacing="2" display={{ base: "none", md: "flex" }}>
+        <HStack as="nav" spacing="0" display={{ base: "none", md: "flex" }}>
           <Link to={"/"}>
-            <Button variant="ghost" fontSize={"1.25rem"}>
+            <Button variant="ghost" fontSize={"1.15rem"}>
               Home
             </Button>
           </Link>
 
           <Link to={"/product"}>
-            <Button variant="ghost" fontSize={"1.25rem"}>
+            <Button variant="ghost" fontSize={"1.15rem"}>
               Product
             </Button>
           </Link>
 
           <Link to={"/clients"}>
-            <Button variant="ghost" fontSize={"1.25rem"}>
+            <Button variant="ghost" fontSize={"1.15rem"}>
               Clients
             </Button>
           </Link>
 
           <Link to={"/contact"}>
-            <Button variant="ghost" fontSize={"1.25rem"}>
+            <Button variant="ghost" fontSize={"1.15rem"}>
               Contact
             </Button>
           </Link>
