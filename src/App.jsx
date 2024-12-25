@@ -6,12 +6,14 @@ import ContactPage from "./pages/ContactPage";
 import Header from "./components/Navbar/Header";
 import ClientPage from "./pages/ClientPage";
 import Footer from "./components/Footer";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <>
       <Box minHeight={"100vh"}>
         <Header />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/product" element={<ProductPage />} />
