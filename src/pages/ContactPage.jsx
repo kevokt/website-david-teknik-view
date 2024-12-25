@@ -10,9 +10,8 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { useProductStore } from "../store/product";
 import ProductCard from "../components/ProductCard";
-import { IoMdContacts } from "react-icons/io";
+import { IoLogoWhatsapp, IoMdContacts } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 
 const ContactPage = () => {
@@ -43,7 +42,7 @@ const ContactPage = () => {
           maxW={"1000px"}
           justifyContent={"space-evenly"}
           flexDirection={{ base: "column-reverse", lg: "row" }}
-          gap={6}
+          gap={{ base: "12", lg: "6" }}
         >
           <Center my={4}>
             <iframe
@@ -56,7 +55,9 @@ const ContactPage = () => {
             ></iframe>
           </Center>
           <VStack my={"auto"}>
-            <Text>Nomor Whatsapp:</Text>
+            <Text fontSize={{ base: "1rem", md: "1.25rem" }} fontWeight={"375"}>
+              Nomor Whatsapp:
+            </Text>
             <a
               href="https://api.whatsapp.com/send?phone=6282114059549"
               target="_blank"
@@ -64,8 +65,10 @@ const ContactPage = () => {
               aria-label="Send a WhatsApp message"
             >
               <Button
-                leftIcon={<IoMdContacts />}
-                colorScheme="green"
+                leftIcon={<IoLogoWhatsapp />}
+                background={"#25d366"}
+                color={"white"}
+                _hover={{ background: "#075e54" }}
                 rounded={"3xl"}
               >
                 0821-1405-9549
@@ -78,15 +81,19 @@ const ContactPage = () => {
               aria-label="Send a WhatsApp message"
             >
               <Button
-                leftIcon={<IoMdContacts />}
-                colorScheme="green"
+                leftIcon={<IoLogoWhatsapp />}
+                background={"#25d366"}
+                color={"white"}
+                _hover={{ background: "#075e54" }}
                 rounded={"3xl"}
               >
                 0857-7178-2036
               </Button>
             </a>
 
-            <Text>Alamat Email:</Text>
+            <Text fontSize={{ base: "1rem", md: "1.25rem" }} fontWeight={"375"}>
+              Alamat Email:
+            </Text>
             <a
               href="mailto:davidteknikblower1@gmail.com"
               target="_blank"

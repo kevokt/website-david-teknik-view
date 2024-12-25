@@ -61,7 +61,7 @@ const HomePage = () => {
           </Flex>
         </Box>
 
-        <Box w={{ base: "80%", lg: "1000px" }} my={"50px"}>
+        <Box w={{ base: "80%", lg: "860px" }} my={"50px"}>
           <Text
             as={"h2"}
             align={"center"}

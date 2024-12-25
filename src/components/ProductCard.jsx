@@ -5,7 +5,7 @@ function ProductCard({ title, imgSrc, description }) {
   return (
     <Box
       bg={"white"}
-      w={"350px"}
+      w={{ base: "80vw", sm: "350px" }}
       h={"500px"}
       borderWidth="1px"
       rounded="lg"
