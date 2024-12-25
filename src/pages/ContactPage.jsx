@@ -40,7 +40,7 @@ const ContactPage = () => {
           justifyContent={"space-evenly"}
           flexDirection={{ base: "column-reverse", lg: "row" }}
           gap={{ base: "10", lg: "6" }}
-          mt={8}
+          mt={5}
         >
           <Center>
             <iframe
@@ -66,7 +66,7 @@ const ContactPage = () => {
                 leftIcon={<IoLogoWhatsapp />}
                 background={"#25d366"}
                 color={"white"}
-                _hover={{ background: "#075e54" }}
+                _hover={{ background: "#1da851" }}
                 rounded={"3xl"}
               >
                 0821-1405-9549
@@ -82,7 +82,7 @@ const ContactPage = () => {
                 leftIcon={<IoLogoWhatsapp />}
                 background={"#25d366"}
                 color={"white"}
-                _hover={{ background: "#075e54" }}
+                _hover={{ background: "#1da851" }}
                 rounded={"3xl"}
               >
                 0857-7178-2036
