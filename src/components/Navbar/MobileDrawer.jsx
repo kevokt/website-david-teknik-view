@@ -1,12 +1,4 @@
-import {
-  useDisclosure,
-  Flex,
-  Box,
-  Button,
-  VStack,
-  Link as ChakraLink,
-  Text,
-} from "@chakra-ui/react";
+import { useDisclosure, Flex, Button, VStack } from "@chakra-ui/react";
 import Drawer from "./Drawer";
 import { IoMdMenu } from "react-icons/io";
 import { Link } from "react-router-dom";

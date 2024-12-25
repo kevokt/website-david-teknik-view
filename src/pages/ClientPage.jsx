@@ -1,8 +1,5 @@
-import React, { useEffect } from "react";
-import { Container, Text, VStack, SimpleGrid } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-import { useProductStore } from "../store/product";
-import ProductCard from "../components/ProductCard";
+import React from "react";
+import { Container, Text, VStack } from "@chakra-ui/react";
 
 const ClientPage = () => {
   return (

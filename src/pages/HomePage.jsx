@@ -1,18 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   Container,
   Text,
   VStack,
-  SimpleGrid,
   Box,
   Flex,
   Button,
-  OrderedList,
-  ListItem,
   Center,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import ScrollAnimation from "react-animate-on-scroll";
 import ProductCard from "../components/ProductCard";
 import { GiComputerFan } from "react-icons/gi";
 import { FaMagnifyingGlass } from "react-icons/fa6";

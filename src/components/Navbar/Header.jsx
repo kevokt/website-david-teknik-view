@@ -1,16 +1,7 @@
-import {
-  Image,
-  Flex,
-  Button,
-  HStack,
-  chakra,
-  Text,
-  Box,
-} from "@chakra-ui/react";
+import { Flex, Button, HStack, chakra, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import React from "react";
 import MobileDrawer from "./MobileDrawer";
-import logo from "/david_teknik_logo.png";
 import { GiComputerFan } from "react-icons/gi";
 
 export default function Header() {
