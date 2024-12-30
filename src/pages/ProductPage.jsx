@@ -55,6 +55,7 @@ const ProductPage = () => {
           mt={14}
           maxW={{ base: "md", lg: "5xl" }}
           w={"70%"}
+          textAlign={{ base: "center", lg: "left" }}
         >
           Jika Anda berminat untuk melakukan pemesanan atau memiliki pertanyaan
           lebih lanjut, jangan ragu untuk menghubungi kami.
