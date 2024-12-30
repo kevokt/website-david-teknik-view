@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
+import AboutSection from "../components/About/AboutSection";
 import { GiComputerFan } from "react-icons/gi";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { IoMdContacts } from "react-icons/io";
@@ -21,7 +22,9 @@ const HomePage = () => {
       <VStack spacing={3}>
         <Box
           bgSize="cover"
-          bgImage="url(https://images.unsplash.com/photo-1579618215542-2ed5e10b65ed?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
+          bgImage="linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('foto_workshop/W6.jpg');"
+          bgPosition={"center center"}
+          bgRepeat={"no-repeat"}
           w="100vw"
           h={"90vh"}
           maxH={"800px"}
@@ -47,8 +50,13 @@ const HomePage = () => {
               <a href="#about-us">
                 <Button
                   rightIcon={<FaMagnifyingGlass />}
-                  width={"200px"}
-                  mb={10}
+                  rounded={"full"}
+                  size={"lg"}
+                  fontWeight={"normal"}
+                  px={6}
+                  colorScheme={"red"}
+                  bg={"blue.500"}
+                  _hover={{ bg: "blue.600" }}
                 >
                   Pelajari Lebih Lanjut
                 </Button>
@@ -57,7 +65,7 @@ const HomePage = () => {
           </Flex>
         </Box>
 
-        <Box w={{ base: "80%", lg: "860px" }} my={"50px"}>
+        {/* <Box w={{ base: "80%", lg: "860px" }} my={"50px"}>
           <Text
             as={"h2"}
             align={"center"}
@@ -86,7 +94,9 @@ const HomePage = () => {
             tantangan baru dan memberikan kontribusi positif bagi industri di
             Indonesia.
           </Text>
-        </Box>
+        </Box> */}
+
+        <AboutSection />
 
         <Box w={{ base: "80%", lg: "1000px" }} my={"50px"}>
           <Text
