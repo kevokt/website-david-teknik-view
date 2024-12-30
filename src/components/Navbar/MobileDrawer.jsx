@@ -20,19 +20,27 @@ export default function MobileDrawer() {
       <Drawer isOpen={isOpen} onClose={onClose} finalFocusRef={btnRef}>
         <VStack alignItems="center" spacing="1">
           <Link to={"/"} onClick={onClose}>
-            <Button variant="ghost">Home</Button>
+            <Button className="nav-button" variant="ghost">
+              <span>Beranda</span>
+            </Button>
           </Link>
 
           <Link to={"/product"} onClick={onClose}>
-            <Button variant="ghost">Product</Button>
+            <Button className="nav-button" variant="ghost">
+              <span>Produk</span>
+            </Button>
           </Link>
 
           <Link to={"/clients"} onClick={onClose}>
-            <Button variant="ghost">Clients</Button>
+            <Button className="nav-button" variant="ghost">
+              <span>Klien</span>
+            </Button>
           </Link>
 
           <Link to={"/contact"} onClick={onClose}>
-            <Button variant="ghost">Contact</Button>
+            <Button className="nav-button" variant="ghost">
+              <span>Kontak</span>
+            </Button>
           </Link>
         </VStack>
       </Drawer>

@@ -110,8 +110,8 @@ const HomePage = () => {
           >
             <ProductCard
               title="Axial Fan"
+              imgSrc="/foto_produk_david_teknik/axial_fan/A5.jpg"
               description="Dirancang untuk memaksimalkan aliran udara dalam berbagai aplikasi, seperti sistem ventilasi gedung, pabrik, dan fasilitas industri."
-              imgSrc="/foto_produk_david_teknik/axial_fan/A1.jpg"
             />
 
             <ProductCard

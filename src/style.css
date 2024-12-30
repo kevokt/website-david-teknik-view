@@ -20,3 +20,32 @@ body {
 #footer {
     box-shadow: 0 10px 15px 12px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
+.nav-button {
+    transition: all 0.5s;
+}
+
+.nav-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.nav-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.nav-button:hover span {
+    padding-right: 25px;
+}
+
+.nav-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}

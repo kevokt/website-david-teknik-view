@@ -18,13 +18,13 @@ const ProductPage = () => {
 
         <ProductArticle
           title="Axial Fan"
-          description="Axial fan adalah perangkat mekanis yang berfungsi menggerakkan udara atau gas sejajar dengan porosnya. Kipas ini juga dikenal sebagai kipas baling-baling, kipas tabung aksial, atau kipas baling-baling aksial."
-          imgSrc="/foto_produk_david_teknik/axial_fan/A1.jpg"
+          description="Perangkat mekanis yang berfungsi menggerakkan udara sejajar dengan porosnya. Kipas mengalir udara melaluinya dalam arah aksial, sejajar dengan poros tempat baling-baling berputar."
+          imgSrc="/foto_produk_david_teknik/axial_fan/A3.jpg"
           modalType={1}
         />
         <ProductArticle
           title="Blower Custom"
-          description="Blower custom adalah blower yang dirancang khusus sesuai permintaan. Kami menawarkan layanan kustomisasi untuk memenuhi kebutuhan khusus pelanggan. "
+          description="Blower yang dirancang khusus sesuai permintaan. Kami menawarkan layanan kustomisasi untuk memenuhi kebutuhan khusus pelanggan. "
           imgSrc="/foto_produk_david_teknik/Blower_dustcollector_portable/BC2_cropped.jpg"
           modalType={2}
         />
