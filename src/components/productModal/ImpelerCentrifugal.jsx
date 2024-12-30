@@ -45,7 +45,9 @@ const ImpelerCentrifugalModal = () => {
 
   return (
     <Box>
-      <Button onClick={onOpen}>Gambar Centrifugal Fan</Button>
+      <Button onClick={onOpen} colorScheme="blue" variant="outline">
+        Gambar Centrifugal Fan
+      </Button>
       <Modal isOpen={isOpen} onClose={onClose} scrollBehavior={"inside"}>
         <ModalOverlay />
         <ModalContent>

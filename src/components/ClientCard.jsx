@@ -33,7 +33,7 @@ const ClientCard = ({ name, logo }) => {
           isTruncated
           alignItems={"center"}
         >
-          {name}
+          PT. {name}
         </Text>
       </Center>
     </Flex>
