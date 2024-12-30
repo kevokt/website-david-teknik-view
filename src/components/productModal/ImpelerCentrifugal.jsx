@@ -25,16 +25,15 @@ const displayImages = () => {
   return Object.keys(fans).map((key) => {
     const fan = fans[key];
     return (
-      <Box key={key} mb={4}>
-        <Text align={"center"}>{fan.name}</Text>
+      <Box key={key} mb={0}>
         <Image
           src={fan.img}
           alt={`Blower Custom ${fan.img}`}
           loading="lazy"
           className="product-image"
-          mt={2}
+          mt={4}
         />
-        <Box borderBottom={"1px solid lightgray"} mt={8}></Box>
+        <Box borderBottom={"1px solid lightgray"} mt={4}></Box>
       </Box>
     );
   });
