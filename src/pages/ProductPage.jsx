@@ -1,6 +1,8 @@
 import React from "react";
-import { Container, Text, VStack } from "@chakra-ui/react";
+import { Container, Text, VStack, Box, Button } from "@chakra-ui/react";
 import ProductArticle from "../components/ProductArticle";
+import { Link } from "react-router-dom";
+import { MdOutlineContacts } from "react-icons/md";
 
 const ProductPage = () => {
   return (
@@ -40,6 +42,34 @@ const ProductPage = () => {
           imgSrc="/foto_produk_david_teknik/impeler_centrifugal/IC11.jpg"
           modalType={4}
         />
+
+        <Box
+          maxW={{ base: "md", lg: "5xl" }}
+          w={"80%"}
+          borderTop={"1px solid gray"}
+          mt={14}
+        ></Box>
+        <Text
+          fontSize={{ base: "1rem", md: "1.25rem" }}
+          fontWeight={"375"}
+          mt={14}
+          maxW={{ base: "md", lg: "5xl" }}
+          w={"70%"}
+        >
+          Jika Anda berminat untuk melakukan pemesanan atau memiliki pertanyaan
+          lebih lanjut, jangan ragu untuk menghubungi kami.
+        </Text>
+
+        <Link to={"/contact"}>
+          <Button
+            rightIcon={<MdOutlineContacts />}
+            colorScheme="green"
+            variant="outline"
+            rounded={"full"}
+          >
+            Kontak Kami
+          </Button>
+        </Link>
       </VStack>
     </Container>
   );

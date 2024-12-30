@@ -33,7 +33,7 @@ const AboutSection = () => {
               Tentang kami
             </Text>
           </Heading>
-          <Text color={"gray.500"} px={"40px"}>
+          <Text color={"gray.500"} px={{ base: "0", md: "20%", xl: "40px" }}>
             CV. David Teknik Blower merupakan salah satu usaha yang bergerak
             dalam bidang produksi dan distribusi kipas industri. Dengan
             pengalaman bertahun-tahun dalam desain, fabrikasi, dan instalasi

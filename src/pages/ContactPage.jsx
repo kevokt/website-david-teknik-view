@@ -27,9 +27,10 @@ const ContactPage = () => {
           </Text>
           <Center>
             <Text fontSize={{ base: "1rem", md: "1.25rem" }} fontWeight={"375"}>
-              Jika ada pertanyaan atau informasi pemesanan lebih lanjut, dapat
-              langsung mengunjungi lokasi yang tertera atau dapat hubungi kontak
-              dibawah ini :
+              Apabila Anda memiliki pertanyaan atau memerlukan informasi lebih
+              lanjut terkait pemesanan, Anda dapat langsung mengunjungi lokasi
+              yang tercantum atau menghubungi kontak yang tersedia di bawah ini
+              :
             </Text>
           </Center>
         </Box>

@@ -27,25 +27,45 @@ export default function Header() {
         </HStack>
         <HStack as="nav" spacing="0" display={{ base: "none", md: "flex" }}>
           <Link to={"/"}>
-            <Button className="nav-button" variant="ghost" fontSize={"1.15rem"}>
+            <Button
+              className="nav-button"
+              rounded={"full"}
+              variant="ghost"
+              fontSize={"1.15rem"}
+            >
               <span>Beranda</span>
             </Button>
           </Link>
 
           <Link to={"/product"}>
-            <Button className="nav-button" variant="ghost" fontSize={"1.15rem"}>
+            <Button
+              className="nav-button"
+              rounded={"full"}
+              variant="ghost"
+              fontSize={"1.15rem"}
+            >
               <span>Produk</span>
             </Button>
           </Link>
 
           <Link to={"/clients"}>
-            <Button className="nav-button" variant="ghost" fontSize={"1.15rem"}>
+            <Button
+              className="nav-button"
+              rounded={"full"}
+              variant="ghost"
+              fontSize={"1.15rem"}
+            >
               <span>Klien</span>
             </Button>
           </Link>
 
           <Link to={"/contact"}>
-            <Button className="nav-button" variant="ghost" fontSize={"1.15rem"}>
+            <Button
+              className="nav-button"
+              rounded={"full"}
+              variant="ghost"
+              fontSize={"1.15rem"}
+            >
               <span>Kontak</span>
             </Button>
           </Link>

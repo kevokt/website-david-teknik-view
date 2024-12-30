@@ -43,7 +43,12 @@ const BlowerCustomModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box>
-      <Button onClick={onOpen} colorScheme="blue" variant="outline">
+      <Button
+        onClick={onOpen}
+        colorScheme="blue"
+        variant="outline"
+        rounded={"full"}
+      >
         Gambar Blower Custom
       </Button>
       <Modal isOpen={isOpen} onClose={onClose} scrollBehavior={"inside"}>

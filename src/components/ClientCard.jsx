@@ -22,6 +22,7 @@ const ClientCard = ({ name, logo }) => {
         objectFit={"contain"}
         w={"100%"}
         bg={"#f2f2f2"}
+        alt={`Logo ${name}`}
       />
 
       <Center h={"75px"}>

@@ -13,7 +13,7 @@ const settings = {
   infinite: true,
   autoplay: true,
   speed: 500,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -97,7 +97,7 @@ const WorkshopCarousel = () => {
             height={"400px"}
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize={"contain"}
+            backgroundSize={{ base: "cover", md: "contain" }}
             backgroundImage={`url(${url})`}
           />
         ))}
