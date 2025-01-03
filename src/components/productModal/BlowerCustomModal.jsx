@@ -54,7 +54,9 @@ const BlowerCustomModal = () => {
       <Modal isOpen={isOpen} onClose={onClose} scrollBehavior={"inside"}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Berikut gambar Blower Custom kami:</ModalHeader>
+          <ModalHeader fontSize={"md"}>
+            Berikut gambar Blower Custom kami:
+          </ModalHeader>
           <ModalCloseButton />
           <ModalBody>{displayImages()}</ModalBody>
           <ModalFooter></ModalFooter>

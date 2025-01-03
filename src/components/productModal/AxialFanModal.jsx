@@ -43,13 +43,20 @@ const AxialFanModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box>
-      <Button onClick={onOpen} colorScheme="blue" variant="outline" rounded={"full"}>
+      <Button
+        onClick={onOpen}
+        colorScheme="blue"
+        variant="outline"
+        rounded={"full"}
+      >
         Gambar Axial Fan
       </Button>
       <Modal isOpen={isOpen} onClose={onClose} scrollBehavior={"inside"}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Berikut gambar Axial Fan kami:</ModalHeader>
+          <ModalHeader fontSize={"md"}>
+            Berikut gambar Axial Fan kami:
+          </ModalHeader>
           <ModalCloseButton />
           <ModalBody>{displayImages()}</ModalBody>
           <ModalFooter></ModalFooter>

@@ -55,7 +55,9 @@ const CentrifugalFanModal = () => {
       <Modal isOpen={isOpen} onClose={onClose} scrollBehavior={"inside"}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Berikut gambar Centrifugal Fan kami:</ModalHeader>
+          <ModalHeader fontSize={"md"}>
+            Berikut gambar Centrifugal Fan kami:
+          </ModalHeader>
           <ModalCloseButton />
           <ModalBody>{displayImages()}</ModalBody>
           <ModalFooter></ModalFooter>

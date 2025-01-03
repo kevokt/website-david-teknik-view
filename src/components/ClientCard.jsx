@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Box, Image, Center, Text } from "@chakra-ui/react";
 
-const ClientCard = ({ name, logo }) => {
+const ClientCard = ({ name, logo, smallerFont }) => {
   return (
     <Flex
       bg={"white"}
@@ -27,7 +27,7 @@ const ClientCard = ({ name, logo }) => {
 
       <Center h={"75px"}>
         <Text
-          fontSize="2xl"
+          fontSize={smallerFont ? "md" : "xl"}
           fontWeight="semibold"
           as="h4"
           lineHeight="tight"

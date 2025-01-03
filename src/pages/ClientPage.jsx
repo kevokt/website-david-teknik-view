@@ -3,8 +3,6 @@ import {
   Box,
   Center,
   Container,
-  Flex,
-  Image,
   SimpleGrid,
   Text,
   VStack,
@@ -23,7 +21,11 @@ const displayClients = () => {
     const client = clients[key];
     return (
       <Box key={key} mx={"auto"}>
-        <ClientCard name={client.name} logo={client.logo} />
+        <ClientCard
+          name={client.name}
+          logo={client.logo}
+          smallerFont={client.smallerFont}
+        />
       </Box>
     );
   });
