@@ -88,7 +88,7 @@ const WorkshopCarousel = () => {
             height={"400px"}
             position={"center"}
             bgRepeat={"no-repeat"}
-            backgroundSize={{ base: "cover", md: "contain" }}
+            objectFit={{ base: "cover", md: "contain" }}
             src={url}
             loading="lazy"
           />
