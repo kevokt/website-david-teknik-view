@@ -5,17 +5,13 @@ export default [
       "logo": "/logo_perusahaan/ADR_Group.png"
     },
     "Client_14": {
-      "name": "Aneka Citra Refrigraha (ACR)",
-      "logo": "/logo_perusahaan/Aneka_Citra_Refrigraha_ACR.png",
+      "name": "Andalan Cipta Reka (ACR)",
+      "logo": "/logo_perusahaan/Andalan_Cipta_Reka.png",
     },
     "Client_13": {
       "name": "Bumi Tangerang Mesindotama (BT COCOA)",
       "logo": "/logo_perusahaan/Bumi_Tangerang_Mesindotama__BT_COCOA.png",
       "smallerFont": true
-    },
-    "Client_2": {
-      "name": "Bumi Tangerang",
-      "logo": "/logo_perusahaan/Bumi_Tangerang.png"
     },
     "Client_3": {
       "name": "Darisa",

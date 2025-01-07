@@ -47,6 +47,30 @@ export default [
         "name": "BC3",
         "img": "/foto_produk_david_teknik/Blower_dustcollector_portable/BC3.jpg"
       },
+      "BC4": {
+        "name": "BC4",
+        "img": "/foto_produk_david_teknik/Blower_dustcollector_portable/BC4.jpg"
+      },
+      "BC5": {
+        "name": "BC5",
+        "img": "/foto_produk_david_teknik/Blower_dustcollector_portable/BC5.jpg"
+      },
+      "BC6": {
+        "name": "BC6",
+        "img": "/foto_produk_david_teknik/Blower_dustcollector_portable/BC6.jpg"
+      },
+      "BC7": {
+        "name": "BC7",
+        "img": "/foto_produk_david_teknik/Blower_dustcollector_portable/BC7.jpg"
+      },
+      "BC8": {
+        "name": "BC8",
+        "img": "/foto_produk_david_teknik/Blower_dustcollector_portable/BC8.jpg"
+      },
+      "BC9": {
+        "name": "BC9",
+        "img": "/foto_produk_david_teknik/Blower_dustcollector_portable/BC9.jpg"
+      },
     },
     "centrifugal_high_low_pressure": {
       "C1": {
@@ -96,6 +120,22 @@ export default [
       "C12": {
         "name": "C12",
         "img": "/foto_produk_david_teknik/centrifugal_high_low_pressure/C12.jpg"
+      },
+      "C13": {
+        "name": "C13",
+        "img": "/foto_produk_david_teknik/centrifugal_high_low_pressure/C13.jpg"
+      },
+      "C14": {
+        "name": "C14",
+        "img": "/foto_produk_david_teknik/centrifugal_high_low_pressure/C14.jpg"
+      },
+      "C15": {
+        "name": "C15",
+        "img": "/foto_produk_david_teknik/centrifugal_high_low_pressure/C15.jpg"
+      },
+      "C16": {
+        "name": "C16",
+        "img": "/foto_produk_david_teknik/centrifugal_high_low_pressure/C16.jpg"
       },
     },
     "impeler_centrifugal": {

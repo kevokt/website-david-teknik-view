@@ -1,9 +1,10 @@
 import React from "react";
-import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react";
+import { Box, IconButton, useBreakpointValue, Image } from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
+import cards from "./tentang_kami_img.json";
 
 // Settings for the slider
 const settings = {
@@ -27,16 +28,6 @@ const WorkshopCarousel = () => {
   // buttons as the screen size changes
   const top = useBreakpointValue({ base: "40%", md: "40%" });
   const side = useBreakpointValue({ base: "4%", md: "4%" });
-
-  // These are the images used in the slide
-  const cards = [
-    "foto_workshop/W1.jpg",
-    "foto_workshop/W2.jpg",
-    "foto_workshop/W3.jpg",
-    "foto_workshop/W4.jpg",
-    "foto_workshop/W5.jpg",
-    "foto_workshop/W7.jpg",
-  ];
 
   return (
     <Box
@@ -92,13 +83,14 @@ const WorkshopCarousel = () => {
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (
-          <Box
+          <Image
             key={index}
             height={"400px"}
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
+            position={"center"}
+            bgRepeat={"no-repeat"}
             backgroundSize={{ base: "cover", md: "contain" }}
-            backgroundImage={`url(${url})`}
+            src={url}
+            loading="lazy"
           />
         ))}
       </Slider>

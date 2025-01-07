@@ -50,9 +50,32 @@ body {
     right: 0;
 }
 
-a.anchor {
+a.tentang-kami {
     display: block;
     position: relative;
     top: -250px;
     visibility: hidden;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.child {
+    /* FOR 4 IN A GRID */
+    flex: 1 0 50%;
+    max-width: 100%;
+    max-height: 50%;
+
+    /* FOR YOUR 4 IN 1 ROW */
+    /* flex: 1 0 25%;
+    max-width: 25%; */
+
+    /* FOR BOTH */
+    padding: 0px;
+    object-fit: cover;
 }

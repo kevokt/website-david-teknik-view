@@ -17,57 +17,15 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import { IoMdContacts } from "react-icons/io";
 import ScrollAnimation from "react-animate-on-scroll";
 import { MdOutlineContacts } from "react-icons/md";
+import WelcomeSection from "../components/WelcomeSection";
 
 const HomePage = () => {
   return (
     <Container maxW={"Container.x1"} py={0} mt={0}>
       <VStack spacing={3}>
-        <Box
-          bgSize="cover"
-          bgImage="linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('foto_workshop/W6.jpg');"
-          bgPosition={"center center"}
-          bgRepeat={"no-repeat"}
-          w="100vw"
-          h={"90vh"}
-          maxH={"1000px"}
-        >
-          <Flex
-            flexDirection={"column"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-            height={"100%"}
-            padding={"80px"}
-          >
-            <Text
-              fontSize={{ base: "1.5rem", md: "2.25rem" }}
-              fontWeight={"370"}
-              color={"white"}
-              textAlign={"center"}
-              marginTop={"10px"}
-            >
-              Selamat Datang di <br /> CV. David Teknik Blower
-            </Text>
+        <WelcomeSection />
 
-            <Flex flexDirection={"column"} spacing="2">
-              <a href="#anchor">
-                <Button
-                  rightIcon={<FaMagnifyingGlass />}
-                  rounded={"full"}
-                  size={"lg"}
-                  fontWeight={"normal"}
-                  px={6}
-                  colorScheme="white"
-                  bg={"whiteAlpha.400"}
-                  _hover={{ bg: "whiteAlpha.600" }}
-                >
-                  Pelajari Lebih Lanjut
-                </Button>
-              </a>
-            </Flex>
-          </Flex>
-        </Box>
-
-        <a id="anchor"></a>
+        <a id="tentang-kami"></a>
         <AboutSection />
 
         <Box w={{ base: "80%", lg: "1000px" }} my={"50px"}>
@@ -134,89 +92,103 @@ const HomePage = () => {
           </Flex>
         </Box>
 
-        <Box w={{ base: "80%", lg: "1000px" }} my={"70px"}>
+        <Box bgColor={"#f5ecd4"} w={"100vw"}>
           <Center>
-            <Text
-              as={"h2"}
-              fontSize={"1.75rem"}
-              fontWeight={"600"}
-              align={"center"}
-            >
-              Klien Kami
-            </Text>
-          </Center>
-          <Center>
-            <Flex
-              flexDirection={{ base: "column", md: "row" }}
-              justifyContent={"space-between"}
-              alignItems={"center"}
-              w={"700px"}
-              my={"4"}
-              height={{ base: "430px", md: "auto" }}
-            >
-              <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={0}>
-                <Box
-                  bg={"#f2f2f2"}
-                  rounded={"full"}
-                  w={"200px"}
-                  h={"200px"}
-                  bgImage={"/logo_perusahaan/ADR_Group.png"}
-                  bgSize={"200px"}
-                  bgRepeat={"no-repeat"}
-                  bgPosition={"center"}
-                  boxShadow={"lg"}
-                ></Box>
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={50}>
-                <Box
-                  bg={"#f2f2f2"}
-                  rounded={"full"}
-                  w={"200px"}
-                  h={"200px"}
-                  bgImage={"/logo_perusahaan/Bumi_Tangerang.png"}
-                  bgSize={"200px"}
-                  bgRepeat={"no-repeat"}
-                  bgPosition={"center"}
-                  boxShadow={"lg"}
-                ></Box>
-              </ScrollAnimation>
-              <ScrollAnimation
-                animateIn="fadeIn"
-                animateOnce="true"
-                delay={100}
-              >
-                <Box
-                  bg={"#f2f2f2"}
-                  rounded={"full"}
-                  w={"200px"}
-                  h={"200px"}
-                  bgImage={"/logo_perusahaan/Perkasa_Multindo.png"}
-                  bgSize={"200px"}
-                  bgRepeat={"no-repeat"}
-                  bgPosition={"center"}
-                  boxShadow={"lg"}
-                  display={{ base: "none", md: "block" }}
-                ></Box>
-              </ScrollAnimation>
-            </Flex>
-          </Center>
-          <Center>
-            <Link to={"/clients"}>
-              <ScrollAnimation
-                animateIn="fadeIn"
-                animateOnce="true"
-                delay={150}
-              >
-                <Button
-                  rightIcon={<IoMdContacts />}
-                  colorScheme="yellow"
-                  variant="outline"
-                  rounded={"full"}
+            <Box w={{ base: "80%", lg: "1000px" }} my={"100px"}>
+              <Center>
+                <Text
+                  as={"h2"}
+                  fontSize={"1.75rem"}
+                  fontWeight={"600"}
+                  align={"center"}
                 >
-                  Lihat Klien Kami Lebih Lanjut
-                </Button>
-              </ScrollAnimation>
-            </Link>
+                  Klien Kami
+                </Text>
+              </Center>
+              <Center>
+                <Flex
+                  flexDirection={{ base: "column", md: "row" }}
+                  justifyContent={"space-between"}
+                  alignItems={"center"}
+                  w={"700px"}
+                  my={"4"}
+                  height={{ base: "430px", md: "auto" }}
+                >
+                  <ScrollAnimation
+                    animateIn="fadeIn"
+                    animateOnce="true"
+                    delay={0}
+                  >
+                    <Box
+                      bg={"#f2f2f2"}
+                      rounded={"full"}
+                      w={"200px"}
+                      h={"200px"}
+                      bgImage={"/logo_perusahaan/ADR_Group.png"}
+                      bgSize={"200px"}
+                      bgRepeat={"no-repeat"}
+                      bgPosition={"center"}
+                      boxShadow={"lg"}
+                    ></Box>
+                  </ScrollAnimation>
+                  <ScrollAnimation
+                    animateIn="fadeIn"
+                    animateOnce="true"
+                    delay={50}
+                  >
+                    <Box
+                      bg={"#f2f2f2"}
+                      rounded={"full"}
+                      w={"200px"}
+                      h={"200px"}
+                      bgImage={
+                        "/logo_perusahaan/Bumi_Tangerang_Mesindotama__BT_COCOA.png"
+                      }
+                      bgSize={"200px"}
+                      bgRepeat={"no-repeat"}
+                      bgPosition={"center"}
+                      boxShadow={"lg"}
+                    ></Box>
+                  </ScrollAnimation>
+                  <ScrollAnimation
+                    animateIn="fadeIn"
+                    animateOnce="true"
+                    delay={100}
+                  >
+                    <Box
+                      bg={"#f2f2f2"}
+                      rounded={"full"}
+                      w={"200px"}
+                      h={"200px"}
+                      bgImage={"/logo_perusahaan/Perkasa_Multindo.png"}
+                      bgSize={"200px"}
+                      bgRepeat={"no-repeat"}
+                      bgPosition={"center"}
+                      boxShadow={"lg"}
+                      display={{ base: "none", md: "block" }}
+                    ></Box>
+                  </ScrollAnimation>
+                </Flex>
+              </Center>
+              <Center>
+                <Link to={"/clients"}>
+                  <ScrollAnimation
+                    animateIn="fadeIn"
+                    animateOnce="true"
+                    delay={150}
+                  >
+                    <Button
+                      rightIcon={<IoMdContacts />}
+                      colorScheme="yellow"
+                      variant="outline"
+                      rounded={"full"}
+                    >
+                      Lihat Klien Kami Lebih Lanjut
+                    </Button>
+                  </ScrollAnimation>
+                </Link>
+              </Center>
+            </Box>
           </Center>
         </Box>
 
