@@ -7,6 +7,7 @@ export default [
     "Client_14": {
       "name": "Andalan Cipta Reka (ACR)",
       "logo": "/logo_perusahaan/Andalan_Cipta_Reka.png",
+      "isCV": true
     },
     "Client_13": {
       "name": "Bumi Tangerang Mesindotama (BT COCOA)",

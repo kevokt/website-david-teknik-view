@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Box, Image, Center, Text } from "@chakra-ui/react";
 
-const ClientCard = ({ name, logo, smallerFont }) => {
+const ClientCard = ({ name, logo, smallerFont, isCV }) => {
   return (
     <Flex
       bg={"white"}
@@ -34,7 +34,8 @@ const ClientCard = ({ name, logo, smallerFont }) => {
           isTruncated
           alignItems={"center"}
         >
-          PT. {name}
+          {/* PT. {name} */}
+          {isCV ? "CV. " : "PT.  "} {name}
         </Text>
       </Center>
     </Flex>

@@ -25,6 +25,7 @@ const displayClients = () => {
           name={client.name}
           logo={client.logo}
           smallerFont={client.smallerFont}
+          isCV={client.isCV}
         />
       </Box>
     );
