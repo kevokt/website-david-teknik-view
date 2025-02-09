@@ -20,7 +20,7 @@ const AboutSection = () => {
         py={{ base: 25, md: 28 }}
         direction={{ base: "column-reverse", xl: "row" }}
       >
-        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+        <Stack flex={1} spacing={{ base: 5, md: 5 }}>
           <Heading lineHeight={1.1} fontWeight={600}>
             <Text
               as={"h2"}
@@ -45,7 +45,11 @@ const AboutSection = () => {
             proyek yang kami tangani memenuhi standar kualitas tertinggi dan
             kepuasan pelanggan. CV. David Teknik Blower selalu siap untuk
             menghadapi tantangan baru dan memberikan kontribusi positif bagi
-            industri di Indonesia.
+            industri di Indonesia. <br />
+            <br /> CV. David Teknik Blower berdomisili di kota Tangerang dan
+            sudah melayani berbagai client dari banyak perusahaan. Kami siap
+            melayani jual beli berbagai macam blower dan pemesanan blower
+            custom.
           </Text>
         </Stack>
         <Flex

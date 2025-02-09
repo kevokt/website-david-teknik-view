@@ -8,7 +8,7 @@ import cards from "./tentang_kami_img.json";
 
 // Settings for the slider
 const settings = {
-  dots: true,
+  dots: false,
   arrows: false,
   fade: true,
   infinite: true,
